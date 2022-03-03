@@ -26,6 +26,12 @@ body {
     right: 0px;
 }
 
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
 .nav-menu ul {
     list-style-type: none;
     margin: 0;
@@ -37,4 +43,89 @@ body {
 .nav-menu ul li {
     margin-left: 25px;
     margin-right: 5px;
+}
+
+.nav-menu a:hover{
+    color: #00ffff;
+}
+
+#titulo {
+    margin-top: 20vh;
+    position: relative;
+}
+
+#titulo h1, #titulo h2{
+    color: #00ffff;
+}
+
+h1 {
+    margin-top: 10px;
+    color: rgba(0, 204, 255, 0.623);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 20px;
+}
+
+#nosotros, #objetivos {
+    margin: 3% 6% 0px 6%;
+}
+#registros {
+    padding-top: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+}
+
+.flecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.mi-flecha {
+    width: 2vw;
+    height: 2vh;
+    border: 0.5vw solid;
+    border-color: transparent #00ffff #00ffff transparent;
+    transform: rotate(40deg);
+}
+
+.flecha-invertida {
+    position: absolute;
+    animation: slide 4s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+    opacity: 0;
+    transform: translate(-3w);
+    }
+    20% {
+    opacity: 1;
+    transform: translate(-2w);
+    }
+    40% {
+        opacity: 0;
+        transform: translate(-1w);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(1w);
+    }
+    80% {
+    transform: translate(2w);
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    transform: translate(3w);
+    }
 }
