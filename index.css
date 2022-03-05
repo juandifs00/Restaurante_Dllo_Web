@@ -92,10 +92,10 @@ h1 {
 
 .mi-flecha {
     width: 2vw;
-    height: 2vh;
+    height: 2vw;
     border: 0.5vw solid;
     border-color: transparent #00ffff #00ffff transparent;
-    transform: rotate(40deg);
+    transform: rotate(45deg);
 }
 
 .flecha-invertida {
@@ -106,26 +106,22 @@ h1 {
 @keyframes slide {
     0% {
     opacity: 0;
-    transform: translate(-3w);
+    transform: translateY(-4vw);
     }
     20% {
     opacity: 1;
-    transform: translate(-2w);
+    transform: translateY(-2vw);
     }
     40% {
-        opacity: 0;
-        transform: translate(-1w);
+    opacity: 0;
+    transform: translateY(0vw);
     }
     60% {
-        opacity: 1;
-        transform: translate(1w);
-    }
-    80% {
-    transform: translate(2w);
-    opacity: 0;
+    opacity: 1;
+    transform: translateY(2vw);
     }
     100% {
-    opacity: 1;
-    transform: translate(3w);
+    opacity: 0;
+    transform: translateY(4vw);
     }
 }

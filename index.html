@@ -26,7 +26,7 @@
 
         <div id="titulo">
             <center>
-                <h1>Restarurante Dllo Web</h1> 
+                <h1>Restarurante Dllo Web</h1>
                 <h2>Lorem ipsum dolor sit amet, consectetur adip</h2>
             </center>
             <div class="flecha">
@@ -120,12 +120,18 @@
                 </center>
             </div>
             <div class="colum">
-                <form action="">
-                    <input type="Email" name="" placeholder="Ingrese su correo" id="txtCorreo">
+                <h2>Registro</h2>
+
+                <form action="javascript:void(0)" onsubmit="obtenerValoresFormulario()">
+                    <input type="email" placeholder="Ingrese su correo" id="txtCorreo">
                     <br>
-                    <input type="text" name="Ingrese su solicitud" id="txtAsunto">
+                    <input type="text" placeholder="Ingrese su nombre" id="txtNombre">
                     <br>
-                    <textarea name="" placeholder="Ingrese una descripción" id="txtDescripcion" cols="30"
+                    <input type="text" placeholder="Ingrese su celular" id="txtCelular">
+                    <br>
+                    <input type="password" placeholder="Ingrese una contraseña" id="txtClave">
+                    <br>
+                    <textarea name="" placeholder="Ingrese una direccion" id="txtDireccion" cols="30"
                         rows="10"></textarea>
                     <br>
                     <input type="submit" value="Enviar Datos">
@@ -133,6 +139,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
+
 </body>
 
 </html>
