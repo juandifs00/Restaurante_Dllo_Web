@@ -9,6 +9,12 @@ function obtenerValoresFormulario() {
     let clave = document.getElementById("txtClave").value
     let direccion = document.getElementById("txtDireccion").value
 
+    if (correo == "") {
+        document.getElementById("lblAlerta").style.display = ""
+        document.getElementById("lblAlerta").innerText="Amiguito, te hizo falta el correo"    
+        return
+    }
+
     // Forma de crear un objeto
     // Inicializar un objeto con propiedaes
     let usuario = { celular, "clave": clave }
@@ -19,11 +25,19 @@ function obtenerValoresFormulario() {
 
     // Agregar propiedades con Bracket Notacion ["key"]
     usuario["nombre"] = nombre
-    
+
     // Forma resumida de crear el objeto
     // let usuario = { correo, nombre, celular, clave, direccion }
-
+    document.getElementById("txtCorreo").value = ""
+    document.getElementById("txtNombre").value = ""
+    document.getElementById("txtCelular").value = ""
+    document.getElementById("txtClave").value = ""
+    document.getElementById("txtDireccion").value = ""
     console.log(usuario)
 }
 
-obtenerValoresFormulario
+function cargarPagina(params) {
+    document.getElementById("lblAlerta").style.display = "none"
+}
+
+cargarPagina()
